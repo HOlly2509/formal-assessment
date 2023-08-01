@@ -54,13 +54,25 @@ $(document).ready(function(){
     //When the hero image loads, animate it upwards
     $(".hero-image").animate({top: '-=100px'})
 
-    
+   
 
 // ------------------------------------
 //Browse Page
 
 $("#descriptiontext").hide();
 loadPlants();
+
+$("#removeone").click(function(){
+    $("#one").hide();
+})
+
+$("#removetwo").click(function(){
+    $("#two").hide();
+})
+
+$("#removethree").click(function(){
+    $("#three").hide();
+})
 
     
 });
@@ -112,9 +124,3 @@ $(".card").click(function() {
     //resize the image to fit additional content
     $(".card-img-top").toggleclass("small");
 })
-
-$("#removeone").click(function(){
-    $("#one").hide();
-})
-
-
